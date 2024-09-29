@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ? bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ! font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- * main css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center">
+
+        <!-- ! sign in -->
+        <div class=" sign-in show text-center mx-auto position-relative  ">
+            <div class="position-absolute white-layer"></div>
+            <div class="form ">
+                <h1 class="  position-absolute">Smart Login System</h1>
+                <div class="dotted"></div>
+                <form action="submit" class="d-flex flex-column gap-3">
+                    <input class="z-3 sign-in-email" type="email" placeholder="Enter your Email">
+                    <input class="z-3 sign-in-password" type="password" placeholder="Enter your Password">
+                    <div class="valid text-black fw-bolder z-3 fs-6 d-none">Put Valid Info</div>
+                    <div class="req text-black fw-bolder z-3 fs-6 d-none">All Inputs Required</div>
+                    <div></div>
+                    <button class="z-3 sign-in-button" type="button">Login</button>
+                    <p class="z-3 fw-bold ">Don’t have an account? <a href="#" class="sign-up-a">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+        <!-- ^ sign up -->
+        <div class=" sign-up  hide text-center mx-auto position-relative  ">
+            <div class="position-absolute white-layer"></div>
+            <div class="form ">
+                <h1 class="  position-absolute">Smart Login System</h1>
+                <div class="dotted"></div>
+                <form action="submit" class="d-flex flex-column gap-3">
+                    <input type="text" class="z-3 user-name" placeholder="Enter your Name">
+                    <input class="z-3 email" type="email" placeholder="Enter your Email">
+                    <input class="z-3 password" type="password" placeholder="Enter your Password">
+                    <div class="text-black fw-bolder z-3 fs-6 success d-none"> complete</div>
+                    <div class="text-black fw-bolder z-3 fs-6 failed d-none"> All Inputs Required</div>
+                    <button class="z-3 sign-up-button" type="button">Sign Up</button>
+                    <p class="z-3 fw-bold ">You have an account? <a href="#" class="sign-in-a">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+        <!-- ? home page -->
+    </div>
+    <div class="home hide ">
+        <div class="nav ">
+            <div class="container d-flex justify-content-between align-items-center">
+                <h2 class=" fs-5"> SMART LOGIN</h2>
+                <button class="out"> Log Out</button>
+            </div>
+
+        </div>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="data d-flex justify-content-center align-items-center ">
+                <div class="text-white h2">
+                    Hello <span class="hello-user"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--^ java script -->
+    <script src="./javaScript/index.js"></script>
+</body>
+
+</html>
